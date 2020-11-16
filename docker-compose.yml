@@ -2,7 +2,7 @@ version: '3.4'
 services:
   netbox: &netbox
     restart: unless-stopped
-    image: netboxcommunity/netbox:${VERSION-latest-ldap}
+    image: netboxcommunity/netbox:v2.9.8-ldap
     depends_on:
     - redis
     - redis-cache
